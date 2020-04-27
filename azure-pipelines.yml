@@ -81,7 +81,7 @@ stages:
           steps:
           - download: current
             artifact: drop
-          - script: echo $(WebAppName`)        
+          - script: echo $WebAppName        
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
